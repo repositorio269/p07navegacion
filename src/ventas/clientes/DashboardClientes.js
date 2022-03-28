@@ -13,6 +13,9 @@ export default function DashboardClientes() {
   return (
     <div className='container'>
       <h1>Clientes</h1>
+      <Link to="/ventas/crear-cliente">
+        <button>Crear cliente</button>
+      </Link>
       <table>
         <thead>
           <tr>
