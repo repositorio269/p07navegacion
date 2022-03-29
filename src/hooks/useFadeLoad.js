@@ -5,7 +5,8 @@ export function useFadeLoad() {
     const containerRef = useRef();
 
     useEffect(() => {
-        containerRef.current.classList.add('fade');
+        // containerRef.current corresponde a document.<selector>.
+        containerRef.current.classList.add('fade'); // JS DOM
         setTimeout(() => {
             containerRef.current.classList.add('show');
         }, 50);
@@ -14,3 +15,4 @@ export function useFadeLoad() {
     return containerRef;
 
 }
+
